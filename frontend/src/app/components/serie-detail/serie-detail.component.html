@@ -1,0 +1,16 @@
+<div class="details default-container">
+    <div class="details__header d-flex ">
+        <img class="details__poster" [src]="serieItemDetail?.images?.poster">
+        <div class="details__descriptions ml-3">teste</div>
+    </div>
+
+    <div class="details__eps mt-5 w-100">
+        <span>Episódios</span>
+        <div class="details__eps-container mt-3 w-100">
+            <div class="details__eps-item d-flex" *ngFor="let episode of serieItemDetail?.episodes; let i = index">
+                <span>{{ i }}</span>
+                <span (click)="download(episode.torrents[0].url)" class="ml-4">{{ episode.title }}</span>
+            </div>
+        </div>
+    </div>
+</div>

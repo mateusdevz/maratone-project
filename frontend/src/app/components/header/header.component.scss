@@ -1,0 +1,20 @@
+.app-header{
+    height: 110px;
+
+    &__container {
+        padding: 0px 100px 0px 100px;
+    }
+
+    &__cam {
+        height: 181px;
+    }
+
+    &__input {
+        width: 440px;
+        height: 45px;
+        border: 0;
+        position: relative;
+        bottom: 30px;
+        outline: 0;
+    }
+}

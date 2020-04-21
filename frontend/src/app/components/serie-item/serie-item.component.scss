@@ -1,0 +1,15 @@
+.serie-item {
+    
+    margin-top: 15px;
+    margin-left: 15px;
+   
+    &__poster {
+        width: 150px;
+        height: 290px;
+
+        @media(min-width: 992px) {
+            width: 210px;
+            height: 310px;
+        }
+    }
+}

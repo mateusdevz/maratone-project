@@ -1,0 +1,14 @@
+<div class="series-container d-flex flex-wrap default-container" #seriesContainer (onScroll)="scroll($event)">
+    <div *ngIf="isSearching else all">
+        <div *ngFor="let serie of allSeries | FilterByName: searchTerm">
+            <app-serie-item [serie]="serie"></app-serie-item>
+        </div>
+    </div>
+
+    <ng-template #all>
+        <div *ngFor="let serie of filteredSeries">
+            <app-serie-item [serie]="serie"></app-serie-item>
+        </div>
+    </ng-template>
+    <input class="series-container__target" #loadTarget>
+</div>
